@@ -9,13 +9,13 @@ Steps to run this project:
 RESTfull API routes:
 
 | METHOD | ROUTE | REQ | RES                                |
-|--------|-------|-----|------------------------------------|
-| POST   | /room |     | {roomId, studentCode, teacherCode} |
-|--------|-------|-----|------------------------------------|
-| POST   | /question |     | {roomId, studentCode, teacherCode} |
-|--------|-------|-----|------------------------------------|
-| POST   | /enjoy |     | {roomId, studentCode, teacherCode} |
-|--------|-------|-----|------------------------------------|
-| POST   | /answer |     | {roomId, studentCode, teacherCode} |
-|--------|-------|-----|------------------------------------|
-| POST   | /stats |     | {roomId, studentCode, teacherCode} |
+|--------|-----------|-----|------------------------------------|
+| POST   | /room     |     | {roomId, studentCode, teacherCode} |
+|--------|-----------|-----|------------------------------------|
+| POST   | /question | {roomId, content, alternativeA, alternativeB, alternativeC, alternativeD, correct}     | {roomId, studentCode, teacherCode} |
+|--------|-----------|-----|------------------------------------|
+| POST   | /enjoy    |     | {roomId, studentCode, teacherCode} |
+|--------|-----------|-----|------------------------------------|
+| POST   | /answer   |     | {roomId, studentCode, teacherCode} |
+|--------|-----------|-----|------------------------------------|
+| POST   | /stats    |     | {roomId, studentCode, teacherCode} |
