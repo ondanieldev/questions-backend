@@ -10,7 +10,7 @@ RESTfull API routes:
  
 | METHOD | ROUTE     | REQ                                                | RES                                |
 |--------|-----------|----------------------------------------------------|------------------------------------|
-| POST   | /room     |                                                    | {roomId, studentCode, teacherCode} |
+| POST | /room || {roomId, studentCode, teacherCode} |
 | POST   | /question | {roomId, content, alternativeA, alternativeB, alternativeC, alternativeD, correct} |                                    |
 | POST   | /enjoy    | {studentCode}                                      | questions[{question}]              |
 | POST   | /answer   | {questionId, alternative}                          |                                    |
