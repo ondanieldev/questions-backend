@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn } from "typeorm"
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from "typeorm"
 import { Question } from "./Question"
 
 @Entity()
@@ -17,10 +17,6 @@ export class Room {
     })
     teacherCode: string
 
-    @Column()
-    hitsNumber: number
-
-    @OneToOne(() => Question, question => question.room)
-    @JoinColumn()
-    question: Question
+    @OneToMany(() => Question, question => question.room)
+    questions: Question[]
 }

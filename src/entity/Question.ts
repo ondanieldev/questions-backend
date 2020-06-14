@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, OneToOne, OneToMany } from "typeorm"
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, OneToMany } from "typeorm"
 import { Room } from "./Room"
 import { Answer } from "./Answer"
 
@@ -28,7 +28,7 @@ export class Question {
     })
     correct: string
 
-    @OneToOne(() => Room, room => room.question)
+    @ManyToOne(() => Room, room => room.questions)
     room: Room
 
     @OneToMany(() => Answer, answer => answer.question)

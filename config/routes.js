@@ -1,10 +1,7 @@
 module.exports = app => {
-    app.route('/questions')
-        .post(app.api.questions.create)
-
-    app.route('/rooms')
-        .post(app.api.rooms.enjoy)
-
-    app.route('/answers')
-        .post(app.api.answers.resolve)
+    app.post('/room', app.api.room.create)
+    app.post('/question', app.api.question.create)
+    app.post('/enjoy', app.api.question.getByRoom)
+    app.post('/answer', app.api.answer.resolve)
+    app.post('/stats', app.api.room.getStats)
 }

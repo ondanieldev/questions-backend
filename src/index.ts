@@ -1,6 +1,6 @@
 // typeorm imports
 import "reflect-metadata";
-import {createConnection} from "typeorm";
+import { createConnection } from "typeorm";
 import { Question } from "./../src/entity/Question"
 import { Room } from "./../src/entity/Room"
 import { Answer } from "./../src/entity/Answer"
@@ -27,7 +27,7 @@ createConnection().then(async connection => {
         .into(app)
 
     // start server
-    app.listen(3000, _ =>{
+    app.listen(3003, _ =>{
         console.log('Backend running!')
     })
 }).catch(error => console.log(error));
