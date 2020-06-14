@@ -8,5 +8,6 @@ Steps to run this project:
 
 RESTfull API routes:
 
-| METHOD | ROUTE | REQ | RES |
+| METHOD | ROUTE | REQ | RES                               |
+|--------|-------|-----|-----------------------------------|
 | POST   | /room |     | {roomId, studentCode, teacherCode}
