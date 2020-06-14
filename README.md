@@ -1,7 +1,7 @@
-# Awesome Project Build with TypeORM
+# Questions app backend
 
 Steps to run this project:
 
-1. Run `npm i` command
+1. Run `npm i` command to build node_modules
 2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+3. Run `npm run dev` command to start server in develop mode
