@@ -1,4 +1,4 @@
-# Questions app backend
+# Questions Application - Backend
 
 ## Steps to run this project:
 
