@@ -1,5 +1,9 @@
 # Questions Application - Backend
 
+## Introduction
+
+This API was developed to provide services to this React Native project: [Questions Frontend](https://github.com/stemDaniel/questions-frontend).
+
 ## Steps to run this project:
 
 1. Run `npm i` command to build node_modules
