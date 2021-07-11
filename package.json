@@ -1,22 +1,21 @@
 {
    "name": "questions-backend",
    "version": "1.0.0",
-   "description": "",
+   "author": {
+      "email": "me@ondaniel.com.br",
+      "name": "Daniel Oliveira",
+      "url": "https://ondaniel.com.br/"
+   },
+   "description": "API for a school questions mobile app.",
+   "license": "MIT",
+   "repository": {
+      "url": "https://github.com/stemDaniel/questions-backend/",
+      "type": "git"
+   },
    "main": "index.js",
    "scripts": {
       "dev": "nodemon src/index.ts"
    },
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/stemDaniel/questions-backend.git"
-   },
-   "keywords": [],
-   "author": "",
-   "license": "ISC",
-   "bugs": {
-      "url": "https://github.com/stemDaniel/questions-backend/issues"
-   },
-   "homepage": "https://github.com/stemDaniel/questions-backend#readme",
    "devDependencies": {
       "nodemon": "^2.0.4",
       "@types/node": "^8.0.29",
